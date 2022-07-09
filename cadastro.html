@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GoodPay</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cadastroStyle.css">
+    <script type="module" src="js/index.js"></script> 
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar bg-light fixed-top">
+            <div class="container-fluid">
+                <img src="img/logo/GoodPay Banner.png" alt="Logo em Texto" width="100px" height="70px">
+                <a class="navbar-brand" href="#">[money for good]</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <img src="img/logo/GoodPay.png" alt="Icone App" width="50px" height="50px">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Pesquisar no App"
+                                aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+                        <div class="accordion" id="accordionPanelsStayOpenExample" style="margin-top: 5%;">
+                            <div class="accordion-item" id="login">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                        aria-controls="panelsStayOpen-collapseOne">
+                                        Login GoodPay
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="panelsStayOpen-headingOne">
+                                    <div class="accordion-body ">
+                                        <div class="input-group input-group-lg formAjuste">
+                                            <span class="input-group-text" id="inputGroup-sizing-lg">Login</span>
+                                            <input id="login" type="text" class="form-control btnAjuste"
+                                                aria-label="Sizing example input"
+                                                aria-describedby="inputGroup-sizing-lg">
+                                        </div>
+                                        <div class="input-group input-group-lg formAjuste">
+                                            <span class="input-group-text" id="inputGroup-sizing-lg">Senha</span>
+                                            <input id="senha" type="password" class="form-control btnAjuste"
+                                                aria-label="Sizing example input"
+                                                aria-describedby="inputGroup-sizing-lg">
+                                        </div>
+                                        <div class="d-grid gap-2 formAjuste">
+                                            <button id="btnEntrar" class="btn btn-outline-success"
+                                                type="button">Entrar</button>
+                                            <button class="btn btn-outline-dark" type="button">Cadastre-se</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseTwo">
+                                        Developer Team [BCW22]
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingTwo">
+                                    <div class="accordion-body">
+                                        <h3>DevTeam <span class="badge bg-secondary">BCW 22</span></h3>
+                                        <p>
+                                            Este aplicativo não tem conexão com o banco de dados, o desenvolvimento
+                                            deste aplicativo tem como
+                                            finalidade o aprendizado de aplicações e interface web. Assim o uso deste
+                                            aplicativo deve ser
+                                            pensado como um
+                                            protótipo não funcional.
+                                        </p>
+                                        <p>
+                                            A aplicação usa elementos de personalização em Bootstrap 5, com Javascript
+                                            local,
+                                            os dados utilizados para e adicionados neste interface não são enviados a um
+                                            serviço.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseThree">
+                                        SoulCode Academy
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingThree">
+                                    <div class="accordion-body">
+                                        <p>
+                                            Tech For Good: 5 pilares que vão transformar o mundo: Educação, Diversidade,
+                                            Saúde, Longevidade e
+                                            Sustentabilidade
+                                        </p>
+                                        <p>
+                                            Nossa missão é a formação e o emprego, aplicando os 5 pilares do "Tech For
+                                            Good". Ser uma escola
+                                            inclusiva, que, através de nossa metodologia ágil, possa capacitar e educar
+                                            em tecnologia, gerar
+                                            oportunidades de emprego para todas as gerações, no início ou na
+                                            ressignificação de carreira, com
+                                            foco em diversidade e equidade. Numa profissão que fomente o bem-estar
+                                            físico e mental, permitindo
+                                            o
+                                            equilíbrio entre a vida profissional e pessoal, através do trabalho remoto,
+                                            com flexibilidade de
+                                            horários, além de ser um negócio sustentável e responsável, socialmente.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="ajusteMain">
+            <div id="containerCadastro">
+                <div id="cadastroForm">
+                    <h2 id="tituloForm">Crie sua Conta!</h2>
+                    <hr>
+                    <form class="row g-3 needs-validation" novalidate>
+                        <div class="col-md-12">
+                            <label for="validationCustom01" class="form-label"></label>
+                            <input placeholder="Usuário" type="text" class="form-control ajusteInput"
+                                id="validationCustom01" value="" required>
+                            <div class="valid-feedback">
+                                Usuário disponível
+                            </div>
+                            <div class="invalid-feedback">
+                                Preencha o usuário
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="validationCustom02" class="form-label"></label>
+                            <input placeholder="Email" type="email" class="form-control ajusteInput"
+                                id="validationCustom02" value="" required>
+                            <div class="valid-feedback">
+                                Email válido
+                            </div>
+                            <div class="invalid-feedback">
+                                Preencha o email
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="validationCustom01" class="form-label"></label>
+                            <input placeholder="Senha" type="password" class="form-control ajusteInput" id="senhaCad"
+                                required>
+                            <div class="valid-feedback">
+                                Senha válida
+                            </div>
+                            <div id="invalido" class="invalid-feedback">
+                                Preencha uma senha
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="validationCustom02" class="form-label"></label>
+                            <input placeholder="Confirmar senha" type="password" class="form-control ajusteInput"
+                                id="confirmaSenha" required>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check" id="ajusteCheck">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                    Declaro que li e estou de acordo com os <a href="#" target="_blank" data-bs-toggle="modal"
+                                    data-bs-target="#modalTermos">Termos e Condições de Uso.</a>
+                                </label>
+                                <div class="invalid-feedback">
+                                    Você precisa aceitar os termos e condições de uso.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button id="btnCad" class="btn btn-secondary" type="submit"
+                                style="width:100%;">Cadastrar</button>
+                        </div>
+                        <span>Já é cadastrado? <a href="index.html">Faça o seu login.</a></span>
+                    </form>
+                </div>
+                <div id="imgPorquinho">
+                    <img src="img/quadrado/2.png" alt="Imagem sustentável">
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Area do modal -->
+    <div id="alertaLogin" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Alerta do Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Mensagem de alerta</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal de termos e condiçoes-->
+    <div id="modalTermos" class="modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Termos e Condições de Uso</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it to make a type 
+                        specimen book. It has survived not only five centuries, but also the leap into 
+                        electronic typesetting, remaining essentially unchanged. It was popularised in 
+                        the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                        and more recently with desktop publishing software like Aldus PageMaker including 
+                        versions of Lorem Ipsum.. Será que vão ler os termos XD</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
+        <script type="module" src="js/index.js"></script>
+        <script src="js/cadastro.js"></script>
+    </footer>
+</body>
+
+</html>

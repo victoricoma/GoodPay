@@ -1,0 +1,61 @@
+#containerCadastro{
+    display: flex;
+    flex-direction: row;
+}
+
+#imgPorquinho img{
+    width: 30vw;
+    height: 55vh;
+    border-radius: 5px;
+}
+
+#tituloForm{
+    text-align: center;
+    font-weight: bold;
+}
+
+#cadastroForm{
+    margin-right: 10%;
+}
+
+span a {
+    text-decoration: none;
+}
+
+.ajusteInput{
+height: 50px;
+}
+
+#ajusteCheck{
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+    
+    header{
+        height: 10vh;
+    }
+
+    #containerCadastro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #cadastroForm{
+        height: 85vh;
+    }
+
+    #imgPorquinho{
+        margin-top: 0;
+        padding-top:0;
+    }
+
+    #imgPorquinho img{
+        width: inherit;
+        
+    }
+        
+
+}
