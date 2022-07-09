@@ -16,7 +16,7 @@
     <nav class="navbar bg-light fixed-top">
       <div class="container-fluid">
         <img src="img/logo/GoodPay Banner.png" alt="Logo em Texto" width="100px" height="70px">
-        <a class="navbar-brand" href="#">[money for good]</a>
+        <a id="loginExp" class="navbar-brand" href="#">[money for good]</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
           aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
@@ -236,7 +236,42 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <p>Mensagem de alerta</p>
+          <p><strong>Senha incorreta</strong></p>
+          <a href="/recuperacao.html">Esqueceu a senha?</a>
+          <p>- Para mais detalhes, acesse o tópico "Ajuda" no menu principal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="alertaCampo" class="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Verificação do Campo</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Preencha todos os campos</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="alertaVerify" class="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Verificação do Usuário</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Usuário inválido.</p>
+          <a href="/cadastro.html">Cadastre-se</a>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
