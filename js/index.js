@@ -1,4 +1,6 @@
 import userLogin from "./moduloDados.js";
+import cardContent from "./moduloLeiaMais.js"
+
 const alertaLogin = new bootstrap.Modal("#alertaLogin");
 const alertaCampo = new bootstrap.Modal('#alertaCampo');
 const alertaVerify = new bootstrap.Modal('#alertaVerify');
@@ -100,3 +102,51 @@ const noUserFound = document.getElementById("userNoF");
 noUserFound.addEventListener("click", _event => {
   erro1011.show()
 });
+
+/* --------------- INÍCIO MODAL LEIA MAIS ---------------*/
+let cards = document.getElementsByClassName("card-promo")
+
+//criar botões em cada card de promoção encontrado
+for (let card of cards) {
+  //criar elemento botão
+  let button = document.createElement("button")
+  //passar atributos ao botão
+  button.type = "button"
+  button.setAttribute("class", "btn btn-light btn-sm")
+  button.setAttribute("data-bs-toggle", "modal")
+  button.setAttribute("data-bs-target", "#exampleModal")
+  button.innerHTML = "Leia mais..."
+
+  let btnDiv = document.createElement("div")
+  card.appendChild(btnDiv)
+  btnDiv.appendChild(button)
+  btnDiv.setAttribute("class", "divBtn d-flex justify-content-center")
+}
+
+//função do modal de conteudo variavel do bootstrap
+const cardsModal = document.getElementById('exampleModal')
+
+cardsModal.addEventListener('show.bs.modal', event => {
+  const button = event.relatedTarget
+
+  //capturar os campos do card dentro do modal
+  let cardModalImg = document.querySelector("#cardModalImg")
+  let cardModalTitle = document.querySelector("#cardModalTitle")
+  let cardModalText = document.querySelector("#cardModalText")
+
+  //
+  for (let i = 0; i < cardContent.length; i++) {
+    let clicadoTitle = button.parentElement.parentElement.firstElementChild.innerText
+    let cardText = cardContent[i].body
+    let cardTitle = cardContent[i].title
+    let cardImage = cardContent[i].img
+
+    if (clicadoTitle == cardTitle) {
+      cardModalText.innerText = cardText
+      cardModalTitle.innerText = cardTitle
+      console.log(cardImage)
+      cardModalImg.setAttribute("src", cardImage)
+      console.log(cardModalImg)
+    }
+  }
+})
