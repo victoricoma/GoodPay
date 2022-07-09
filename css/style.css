@@ -1,12 +1,36 @@
-.formAjuste{
+.formAjuste {
     margin: 0.6rem;
 }
-.btnAjuste{
+
+.btnAjuste {
     padding: 0.3rem;
 }
-.ajusteMain{
+
+.ajusteMain {
     width: 80%;
     margin-top: 8%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.btnAjuda {
+    position: relative;
+    left: -14px;
+    display: flex;
+    align-items: center;
+    width: 340px;
+    height: 50px;
+    padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+    font-size: 0.9rem;
+    color: var(--bs-accordion-btn-color);
+    text-align: left;
+    background-color: var(--bs-accordion-btn-bg);
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: var(--bs-accordion-transition);
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: rgb(228, 228, 228);
 }
